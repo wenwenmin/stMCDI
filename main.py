@@ -26,8 +26,8 @@ parser.add_argument("--unconditional", action="store_true", default=0)
 parser.add_argument("--modelfolder", type=str, default="")
 parser.add_argument("--nsample", type=int, default=1000)
 
-parser.add_argument("--dataname", type=str, default="DLPFC")
-parser.add_argument("--subfolder", type=str, default="151507")
+parser.add_argument("--dataname", type=str, default="Benchmark")
+parser.add_argument("--subfolder", type=str, default="MOB")
 
 args = parser.parse_args()
 print(args)
@@ -45,10 +45,7 @@ seed_everything(args.seed)
 
 dataname = args.dataname
 subfolder = args.subfolder
-if dataname == "DLPFC":
-    dataset_path = f"data/DLPFC/{subfolder}/{subfolder}.h5ad"
-    location_path = f"data/DLPFC/{subfolder}/Location.txt"
-elif dataname == "Benchmark":
+if dataname == "Benchmark":
     dataset_path = f"data/Benchmark/{subfolder}/{subfolder}.h5ad"
     location_path = f"data/Benchmark/{subfolder}/Location.txt"
 else:

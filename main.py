@@ -46,8 +46,8 @@ seed_everything(args.seed)
 dataname = args.dataname
 subfolder = args.subfolder
 if dataname == "Benchmark":
-    dataset_path = f"data/Benchmark/{subfolder}/{subfolder}.h5ad"
-    location_path = f"data/Benchmark/{subfolder}/Location.txt"
+    dataset_path = f"data/{subfolder}/Insitu_count.txt"
+    location_path = f"data/{subfolder}/Location.txt"
 else:
     raise ValueError("Invalid dataname")
 

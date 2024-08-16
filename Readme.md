@@ -18,3 +18,6 @@ please check ./data
 python main.py
 ```
 
+## Contact details
+
+lixiaoyu@mail.ynu.edu.cn and wenwen.min@qq.com

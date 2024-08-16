@@ -1,0 +1,29 @@
+
+#type: args
+
+train:
+  epochs: 2000
+  batch_size: 356
+  lr: 0.0003
+
+GCN:
+  layers: 3
+  hidden_dim: 128
+
+diffusion:
+  layers: 4  
+  channels: 64 
+  nheads: 4
+  diffusion_embedding_dim: 128
+  beta_start: 0.0001
+  beta_end: 0.5
+  num_steps: 1000
+  schedule: "quad"
+  mixed: False
+
+model:
+  is_unconditional: 0
+  timeemb: 32
+  featureemb: 32
+  target_strategy: "random"
+  mixed: False

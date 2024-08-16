@@ -27,7 +27,7 @@ parser.add_argument("--modelfolder", type=str, default="")
 parser.add_argument("--nsample", type=int, default=1000)
 
 parser.add_argument("--dataname", type=str, default="Benchmark")
-parser.add_argument("--subfolder", type=str, default="MOB")
+parser.add_argument("--subfolder", type=str, default="HBC")
 
 args = parser.parse_args()
 print(args)
